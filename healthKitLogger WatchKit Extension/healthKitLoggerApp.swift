@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import healthKitPackage
 @main
 struct healthKitLoggerApp: App {
     var body: some Scene {
