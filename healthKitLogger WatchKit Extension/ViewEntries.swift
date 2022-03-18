@@ -9,7 +9,7 @@ import SwiftUI
 import healthKitPackage
 
 struct ViewEntries: View {
-    var addendumViewModel = AddendumModel()
+    @EnvironmentObject var addendumViewModel: AddendumModel
     var addendumTypeName: String!
     var body: some View {
         List(addendumViewModel.items.filter({ $0.addendum2addendumtype?.name == addendumTypeName }), id: \.self) { item in

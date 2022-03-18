@@ -9,27 +9,38 @@ import SwiftUI
 import healthKitPackage
 
 struct ContentView: View {
+    @ObservedObject var addendumViewModel = AddendumModel()
+    @ObservedObject var addendumTypeViewModel = AddendumTypeModel()
     var body: some View {
         GeometryReader { reader in
             let rect = reader.frame(in: .global)
             VStack(spacing: 15) {
                 HStack(spacing: 25) {
-                    NavigationLink(destination: AddEntry(addendumTypeName: "nutrition"), label: {
+                    NavigationLink(destination: AddEntry(addendumTypeName: "nutrition")
+                                    .environmentObject(addendumViewModel)
+                                    .environmentObject(addendumTypeViewModel), label: {
                         NavButton(image: "plus", title: "Nutrition", rect: rect, color: .pink)
                     })
                         .buttonStyle(PlainButtonStyle())
-                    NavigationLink(destination: AddEntry(addendumTypeName: "medication"), label: {
+                    NavigationLink(destination: AddEntry(addendumTypeName: "medication")
+                                    .environmentObject(addendumViewModel)
+                                    .environmentObject(addendumTypeViewModel)
+                                   , label: {
                     NavButton(image: "cross.case", title: "Medication", rect: rect, color: .blue)
                     })
                         .buttonStyle(PlainButtonStyle())
                 }
                 .frame(width: rect.width, alignment: .center)
                 HStack(spacing: 25) {
-                    NavigationLink(destination: ViewEntries(addendumTypeName: "nutrition"), label: {
+                    NavigationLink(destination: ViewEntries(addendumTypeName: "nutrition")
+                                    .environmentObject(addendumViewModel)
+                                    .environmentObject(addendumTypeViewModel), label: {
                         NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .pink)
                     })
                         .buttonStyle(PlainButtonStyle())
-                    NavigationLink(destination: ViewEntries(addendumTypeName: "medication"), label: {
+                    NavigationLink(destination: ViewEntries(addendumTypeName: "medication")
+                                    .environmentObject(addendumViewModel)
+                                    .environmentObject(addendumTypeViewModel), label: {
                         NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .blue)
                     })
                         .buttonStyle(PlainButtonStyle())
@@ -37,6 +48,8 @@ struct ContentView: View {
             }
         }
     }
+        
+    
 }
 struct NavButton: View {
     var image: String

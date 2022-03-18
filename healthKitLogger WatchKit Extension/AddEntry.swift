@@ -9,8 +9,10 @@ import SwiftUI
 import healthKitPackage
 
 struct AddEntry: View {
+    @EnvironmentObject var addendumViewModel: AddendumModel
+    @EnvironmentObject var addendumTypeViewModel: AddendumTypeModel
     @State var entryText = ""
-    var addendumTypeName: String!
+    @State var addendumTypeName: String!
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(spacing: 15) {
@@ -27,11 +29,10 @@ struct AddEntry: View {
         .navigationTitle(addendumTypeName)
     }
     private func save(entry: String) -> Void {
-        let addendumTypeViewModel = AddendumTypeModel()
-        let addendumViewModel = AddendumModel()
         if addendumTypeViewModel.items.filter({ $0.name == addendumTypeName }).count == 0 {
             let addendumType = addendumTypeViewModel.insertRecord()
             addendumType.name = addendumTypeName
+            addendumTypeViewModel.items.append(addendumType)
             addendumTypeViewModel.saveChanges()
         }
         let addendumType = addendumTypeViewModel.items.filter( { $0.name == addendumTypeName}).first
@@ -39,6 +40,7 @@ struct AddEntry: View {
         addendum.timestamp = Date()
         addendum.name = entry
         addendum.addendum2addendumtype = addendumType
+        addendumViewModel.items.append(addendum)
         addendumViewModel.saveChanges()
         presentationMode.wrappedValue.dismiss()
     }
