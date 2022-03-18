@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import healthKitPackage
 
 struct ContentView: View {
     var body: some View {
@@ -13,19 +14,25 @@ struct ContentView: View {
             let rect = reader.frame(in: .global)
             VStack(spacing: 15) {
                 HStack(spacing: 25) {
-                    NavigationLink(destination: AddNutrition(), label: {
+                    NavigationLink(destination: AddEntry(addendumTypeName: "nutrition"), label: {
                         NavButton(image: "plus", title: "Nutrition", rect: rect, color: .pink)
                     })
                         .buttonStyle(PlainButtonStyle())
-                    NavigationLink(destination: AddMedication(), label: {
+                    NavigationLink(destination: AddEntry(addendumTypeName: "medication"), label: {
                     NavButton(image: "cross.case", title: "Medication", rect: rect, color: .blue)
                     })
                         .buttonStyle(PlainButtonStyle())
                 }
                 .frame(width: rect.width, alignment: .center)
                 HStack(spacing: 25) {
-                    NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .pink)
-                    NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .blue)
+                    NavigationLink(destination: ViewEntries(addendumTypeName: "nutrition"), label: {
+                        NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .pink)
+                    })
+                        .buttonStyle(PlainButtonStyle())
+                    NavigationLink(destination: ViewEntries(addendumTypeName: "medication"), label: {
+                        NavButton(image: "doc.plaintext", title: "View", rect: rect, color: .blue)
+                    })
+                        .buttonStyle(PlainButtonStyle())
                 }
             }
         }

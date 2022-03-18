@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D295A6027E3813F00B31E0D /* AddNutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D295A5F27E3813F00B31E0D /* AddNutrition.swift */; };
-		2D295A6227E385E700B31E0D /* AddMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D295A6127E385E700B31E0D /* AddMedication.swift */; };
+		2D295A6027E3813F00B31E0D /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D295A5F27E3813F00B31E0D /* AddEntry.swift */; };
 		2DA33F2727DFBE5500A6A583 /* healthKitLogger WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2DA33F2627DFBE5500A6A583 /* healthKitLogger WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2DA33F2C27DFBE5800A6A583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA33F2B27DFBE5800A6A583 /* Assets.xcassets */; };
 		2DA33F3227DFBE5900A6A583 /* healthKitLogger WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DA33F3127DFBE5900A6A583 /* healthKitLogger WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -17,6 +16,7 @@
 		2DA33F3B27DFBE5900A6A583 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA33F3A27DFBE5900A6A583 /* ComplicationController.swift */; };
 		2DA33F3D27DFBE5A00A6A583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA33F3C27DFBE5A00A6A583 /* Assets.xcassets */; };
 		2DA33F4027DFBE5A00A6A583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA33F3F27DFBE5A00A6A583 /* Preview Assets.xcassets */; };
+		2DD52C0627E3B41B00D32787 /* ViewEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD52C0527E3B41B00D32787 /* ViewEntries.swift */; };
 		2DF0685927DFC5970096FE92 /* healthKitPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2DF0685827DFC5970096FE92 /* healthKitPackage */; };
 		2DF0685C27DFC5D20096FE92 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0685B27DFC5D20096FE92 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
@@ -64,8 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D295A5F27E3813F00B31E0D /* AddNutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNutrition.swift; sourceTree = "<group>"; };
-		2D295A6127E385E700B31E0D /* AddMedication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedication.swift; sourceTree = "<group>"; };
+		2D295A5F27E3813F00B31E0D /* AddEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		2D45405A27E49B2700BCC0A0 /* healthKitLogger WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "healthKitLogger WatchKit App.entitlements"; sourceTree = "<group>"; };
 		2DA33F2227DFBE5500A6A583 /* healthKitLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthKitLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA33F2627DFBE5500A6A583 /* healthKitLogger WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "healthKitLogger WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA33F2B27DFBE5800A6A583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		2DA33F3C27DFBE5A00A6A583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA33F3F27DFBE5A00A6A583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2DA33F4127DFBE5A00A6A583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD52C0527E3B41B00D32787 /* ViewEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEntries.swift; sourceTree = "<group>"; };
+		2DE9A1B027E47FC500C5B044 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		2DF0685A27DFC5CD0096FE92 /* healthKitLogger WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "healthKitLogger WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		2DF0685B27DFC5D20096FE92 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 		2DA33F2A27DFBE5500A6A583 /* healthKitLogger WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				2D45405A27E49B2700BCC0A0 /* healthKitLogger WatchKit App.entitlements */,
 				2DA33F2B27DFBE5800A6A583 /* Assets.xcassets */,
 			);
 			path = "healthKitLogger WatchKit App";
@@ -125,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				2DF0685A27DFC5CD0096FE92 /* healthKitLogger WatchKit Extension.entitlements */,
-				2D295A5F27E3813F00B31E0D /* AddNutrition.swift */,
-				2D295A6127E385E700B31E0D /* AddMedication.swift */,
+				2D295A5F27E3813F00B31E0D /* AddEntry.swift */,
+				2DD52C0527E3B41B00D32787 /* ViewEntries.swift */,
 				2DA33F3627DFBE5900A6A583 /* ContentView.swift */,
 				2DA33F3827DFBE5900A6A583 /* healthKitLoggerApp.swift */,
 				2DA33F3A27DFBE5900A6A583 /* ComplicationController.swift */,
@@ -148,6 +151,7 @@
 		2DF0685727DFC5970096FE92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DE9A1B027E47FC500C5B044 /* CoreData.framework */,
 				2DF0685B27DFC5D20096FE92 /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -289,10 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D295A6227E385E700B31E0D /* AddMedication.swift in Sources */,
 				2DA33F3927DFBE5900A6A583 /* healthKitLoggerApp.swift in Sources */,
 				2DA33F3727DFBE5900A6A583 /* ContentView.swift in Sources */,
-				2D295A6027E3813F00B31E0D /* AddNutrition.swift in Sources */,
+				2DD52C0627E3B41B00D32787 /* ViewEntries.swift in Sources */,
+				2D295A6027E3813F00B31E0D /* AddEntry.swift in Sources */,
 				2DA33F3B27DFBE5900A6A583 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +503,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "healthKitLogger WatchKit App/healthKitLogger WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LSTXQY64N9;
@@ -524,6 +529,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "healthKitLogger WatchKit App/healthKitLogger WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LSTXQY64N9;
