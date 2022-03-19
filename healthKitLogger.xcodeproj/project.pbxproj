@@ -18,7 +18,6 @@
 		2DA33F4027DFBE5A00A6A583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA33F3F27DFBE5A00A6A583 /* Preview Assets.xcassets */; };
 		2DD52C0627E3B41B00D32787 /* ViewEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD52C0527E3B41B00D32787 /* ViewEntries.swift */; };
 		2DF0685927DFC5970096FE92 /* healthKitPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2DF0685827DFC5970096FE92 /* healthKitPackage */; };
-		2DF0685C27DFC5D20096FE92 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0685B27DFC5D20096FE92 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +78,6 @@
 		2DD52C0527E3B41B00D32787 /* ViewEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEntries.swift; sourceTree = "<group>"; };
 		2DE9A1B027E47FC500C5B044 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		2DF0685A27DFC5CD0096FE92 /* healthKitLogger WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "healthKitLogger WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		2DF0685B27DFC5D20096FE92 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.3.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0685927DFC5970096FE92 /* healthKitPackage in Frameworks */,
-				2DF0685C27DFC5D20096FE92 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				2DE9A1B027E47FC500C5B044 /* CoreData.framework */,
-				2DF0685B27DFC5D20096FE92 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
